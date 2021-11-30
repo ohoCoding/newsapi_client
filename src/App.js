@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-
+import NewsItem from './component/NewsItem';
+import NewsList from './component/NewsList';
+import NewsList2 from './component/NewsList2';
 const App = () =>{
   const [data, setData ] = useState(null);
   const onClick = async() => {
@@ -17,9 +19,13 @@ const App = () =>{
     <div>
       <div>
         <button onClick={onClick}>불러오기</button>
+        
       </div>
       {data && <textarea rows ={10} value ={JSON.stringify(data,null,2)} />}
+      <NewsList/>
+      <NewsList2/>
     </div>
+    
   );
 };
 

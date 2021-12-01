@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import NewsItem from './NewsItem';
 import axios from 'axios';
 
-
 const sampleArticle = {
   title:'제목',
   description:'내용',
@@ -46,7 +45,7 @@ const NewsList = () => {
       <NewsItem article ={sampleArticle}/>
       <NewsItem article ={sampleArticle}/>
       <NewsItem article ={sampleArticle}/>
-      <NewsItem article ={sampleArticle}/>
+
     </NewsListBlock>
   );
 };
